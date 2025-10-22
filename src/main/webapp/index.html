@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Student Course Management</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📚 Course Management System</h1>
+            <p>It is platform where student can view courses, enroll in courses, and view enrollments</p>
+        </div>
+        
+        <div class="content">
+            <div class="cards">
+                <div class="card" onclick="window.location.href='student-login.jsp'">
+                    <div class="card-icon">👨‍🎓</div>
+                    <h3>Student Login</h3>
+                    <p>View courses, enroll in courses and view enrolled courses</p>
+                    <button class="btn">Login as Student</button>
+                </div>
+                
+                <div class="card" onclick="window.location.href='admin-login.jsp'">
+                    <div class="card-icon">👨‍💼</div>
+                    <h3>Admin Login</h3>
+                    <p>Manage courses, students, and view courses enrollments</p>
+                    <button class="btn">Login as Admin</button>
+                </div>
+                
+                <div class="card register-card" onclick="window.location.href='student-register.jsp'">
+                    <div class="card-icon">✨</div>
+                    <h3>New Student?</h3>
+                    <p>Join our platform and start enroll in course today!</p>
+                    <button class="btn">Register Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

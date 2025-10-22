@@ -1,0 +1,175 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background: #f5f7fa;
+	min-height: 100vh;
+}
+
+.header {
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	color: white;
+	padding: 20px 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.website-name {
+	font-size: 1.8em;
+	font-weight: 700;
+}
+
+.header-right {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.username {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-weight: 500;
+	background: rgba(255, 255, 255, 0.2);
+	padding: 8px 16px;
+	border-radius: 20px;
+}
+
+.btn {
+	background: white;
+	color: #667eea;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 20px;
+	font-size: 0.95em;
+	font-weight: 600;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.btn:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.logout-btn {
+	background: #ff4757;
+	color: white;
+}
+
+.hero {
+	max-width: 1200px;
+	margin: 50px auto;
+	padding: 0 40px;
+}
+
+.welcome {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.welcome h1 {
+	color: #333;
+	font-size: 2.5em;
+	margin-bottom: 10px;
+}
+
+.welcome p {
+	color: #666;
+	font-size: 1.1em;
+}
+
+.dashboard-cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 30px;
+}
+
+.card {
+	background: white;
+	border-radius: 15px;
+	padding: 35px;
+	text-align: center;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+	transition: all 0.3s ease;
+	cursor: pointer;
+	border: 2px solid transparent;
+}
+
+.card:hover {
+	transform: translateY(-8px);
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+	border-color: #667eea;
+}
+
+.card-icon {
+	width: 80px;
+	height: 80px;
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto 20px;
+	font-size: 2.5em;
+}
+
+.card h3 {
+	color: #333;
+	font-size: 1.5em;
+	margin-bottom: 15px;
+}
+
+.card p {
+	color: #666;
+	line-height: 1.6;
+	margin-bottom: 20px;
+}
+
+.card-btn {
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	color: white;
+	border: none;
+	padding: 12px 30px;
+	border-radius: 25px;
+	font-size: 1em;
+	font-weight: 600;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.card-btn:hover {
+	transform: scale(1.05);
+	box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+@media ( max-width : 768px) {
+	.header {
+		padding: 15px 20px;
+		flex-direction: column;
+		gap: 15px;
+	}
+	.website-name {
+		font-size: 1.4em;
+	}
+	.header-right {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.hero {
+		padding: 0 20px;
+		margin: 30px auto;
+	}
+	.welcome h1 {
+		font-size: 2em;
+	}
+	.dashboard-cards {
+		grid-template-columns: 1fr;
+	}
+}
