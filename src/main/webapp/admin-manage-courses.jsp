@@ -44,7 +44,7 @@
                 <button class="card-btn">Add New</button>
             </div>
 
-            <div class="course-card" onclick="window.location.href='updateCourse.jsp'">
+            <div class="course-card" onclick="window.location.href='admin-update-courses.jsp'">
                 <div class="card-icon">✏️</div>
                 <h3>Update Course</h3>
                 <p>Modify existing course information</p>
@@ -58,7 +58,7 @@
                 <button class="card-btn">Delete</button>
             </div>
 
-            <div class="course-card" onclick="window.location.href='searchCourse.jsp'">
+            <div class="course-card" onclick="window.location.href='admin-search-courses.jsp'">
                 <div class="card-icon">🔍</div>
                 <h3>Search Course</h3>
                 <p>Find courses by ID or other criteria</p>

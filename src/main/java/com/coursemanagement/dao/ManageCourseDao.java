@@ -48,4 +48,28 @@ public class ManageCourseDao {
 		
 		return ls;
 	}
+	
+	public ManageCourse searchCourseById(int id) throws SQLException {
+		
+		Connection con = DBConnection.getConnection();
+		String query = "select * from courses where c_id = ?";
+		PreparedStatement pstmt = con.prepareStatement(query);
+		pstmt.setInt(1, id);
+		ResultSet rs = pstmt.executeQuery();
+		
+		ManageCourse m = null;
+		
+		if(rs.next()) {
+			m = new ManageCourse();
+			
+			m.setC_id(rs.getInt(1));
+			m.setImagePath(rs.getString(2));
+			m.setTitle(rs.getString(3));
+			m.setDescription(rs.getString(4));
+			m.setDuration(rs.getString(5));
+			
+		}
+		
+		return m;
+	}
 }
